@@ -1,7 +1,21 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
 	<Dialog id="helloDialog" title="Hello {/recipient/name}">
+		<content>
+			<core:Icon id="_IDEGen_icon0" src="sap-icon://hello-world" size="8rem" class="sapUiMediumMargin"/>
+			<Text id="_IDEGen_text0" text="start text"></Text>
+			<SegmentedButton id="_IDEGen_segmentedbutton0" selectedKey="SBApproved" width="100%">
+				<items>
+					<SegmentedButtonItem id="_IDEGen_segmentedbuttonitem0" text="Approved" key="SBApproved" press=".onApprove"/>
+					<SegmentedButtonItem id="_IDEGen_segmentedbuttonitem1" text="Rejected" press=".onReject"/>
+					<SegmentedButtonItem id="_IDEGen_segmentedbuttonitem2" text="Lookup" press=".onLookUp"/>
+				</items>
+			</SegmentedButton>
+		</content>
 		<beginButton>
 			<Button id="btnCloseDialog" text="{i18n>dialogCloseButtonText}" press=".onCloseDialog"/>
 		</beginButton>
+		<endButton>
+			<Button id="btnCloseDialog2" text="{i18n>dialogCloseButtonText}" press=".onCloseDialog"/>
+		</endButton>
 	</Dialog>
 </core:FragmentDefinition>
