@@ -4,12 +4,7 @@
 			<pages>
 				<Page id="mainPage" title="{i18n>myTitle}">
 					<content>
-						<Panel id="helloPanel" headerText="{i18n>helloPanelTitle}">
-							<content>
-								<Button id="btnHello" text="{i18n>showHelloButtonText}" press=".onShowHello"/>
-								<Input id="inHello" value="{/recipient/name}" description="Hello {/recipient/name}" valueLiveUpdate="true" width="60%"/>
-							</content>
-						</Panel>
+						<mvc:XMLView id="mvcviewHelloPanel" viewName="sap.ui.demo.walkthrough.view.HelloPanel"/>
 					</content>
 				</Page>
 			</pages>

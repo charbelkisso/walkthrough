@@ -43,6 +43,15 @@
 			"compact": false,
 			"cozy": false
 		},
-		"flexEnabled": true
+		"flexEnabled": true,
+		"routing": {
+			"targets": {
+				"HelloPanel": {
+					"viewId": "_IDEGen_HelloPanel",
+					"viewType": "XML",
+					"viewName": "HelloPanel"
+				}
+			}
+		}
 	}
 }
